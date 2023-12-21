@@ -264,7 +264,7 @@ class App(object):
         self._rt_start = datetime.now()
         self._sim_start, _, _ = next(self._data_1)
         self.read_10_first_lines()
-
+        
     @property
     def _current_book_1(self):
         for t, bids, asks in self._data_1:
